@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --ignore-engines --frozen-lockfile
       - run: yarn lint
         name: Static Code Check
       - run: yarn check:test-service
@@ -54,5 +54,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --ignore-engines --frozen-lockfile
       - run: yarn test:e2e
