@@ -2,16 +2,16 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-
-    "moduleResolution": "node",
-
+    "moduleResolution": "Node16",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "inlineSources": false
